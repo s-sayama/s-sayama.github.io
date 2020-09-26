@@ -1,0 +1,232 @@
+html, body {
+  font-family: 'Lato','Noto Sans JP', 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+body {
+  color: #00336D;
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0 0 30px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .wrap {
+    width: 90%;
+  }
+}
+
+section {
+  padding: 60px 0;
+}
+
+header {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+header .header_img {
+  background: url(img/top.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header .header_img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header .header_title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  header .header_title {
+    max-width: 100%;
+  }
+}
+
+header .header_title h1 {
+  font-weight: normal;
+  text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.1);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  header .header_title h1 {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#about .about_text {
+  line-height: 1.7em;
+}
+
+#about .about_text p {
+  margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #about br.spnone {
+    display: none;
+  }
+}
+
+.title_caption {
+  font-size: 0.4em;
+  margin-left: 20px;
+}
+
+#skill {
+  background-color: #EAEAE0;
+}
+
+h3.skill_title {
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.app_skill, .web_skill {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.skill_box {
+  text-align: center;
+  width: 24%;
+}
+
+.skill_box.figma .skill_image img {
+  width: 100%;
+  max-width: 185px;
+}
+
+@media screen and (max-width: 767px) {
+  .skill_box {
+    width: 50%;
+  }
+}
+
+.skill_image {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.fadein.skill_text {
+  transition: all 1.2s;
+}
+
+.web_skill .skill_box {
+  margin-bottom: 50px;
+}
+
+.html svg {
+  fill: #E06A3B;
+}
+
+.css svg {
+  fill: #208DC3;
+}
+
+.javascript svg {
+  fill: #007AB7;
+}
+
+.wordpress svg {
+  fill: #1F91BE;
+}
+
+.php svg {
+  fill: #7379AE;
+}
+
+.github svg {
+  fill: #111;
+}
+
+.ruby svg {
+  fill: #C7243A;
+}
+
+.skill_list {
+  text-align: left;
+}
+
+.skill_list li {
+  list-style-type: disc;
+}
+
+footer {
+  background-color: #00336D;
+  margin: 0;
+  padding: 20px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.9em;
+}
